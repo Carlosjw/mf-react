@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+    <script src="script.js" defer></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: gray;
+            overflow: auto;
+        }
+
+        li{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CALCULADORA IMC</h1>
+
+    <form>
+        <!-- RECEBENDO O PESO-->
+        <label for="peso">Digite seu peso: </label><br>
+        <input type="number" name="peso" id="peso" placeholder="Ex: 65"><br><br>
+
+        <!-- RECEBENDO A ALTURA -->
+        <label for="altura">Digite seu peso: </label><br>
+        <input type="number" name="altura" id="altura" placeholder="Ex: 1.80"><br><br>
+
+        <button type="button" id="btn">Calcular</button>
+    </form>
+</body>
+</html>
