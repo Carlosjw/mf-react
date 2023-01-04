@@ -1,9 +1,9 @@
 let calcButton = document.getElementById('btn')
+let listValues = document.createElement('ul');    
 
 calcButton.onclick = function (e){
     e.preventDefault()
 
-    let listValues = document.createElement('ul');    
     let listTarget = document.createElement('li');
 
     peso = document.getElementById('peso').value;
@@ -34,5 +34,8 @@ calcButton.onclick = function (e){
 
     listValues.appendChild(listTarget);
     document.body.append(listValues);
+
+    peso = document.getElementById('peso').value = '';
+    altura = document.getElementById('altura').value= '';
 
 }
