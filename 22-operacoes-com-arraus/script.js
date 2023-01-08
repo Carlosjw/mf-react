@@ -9,11 +9,16 @@ lista.map((item, index) => {
 
 // Reduce: busca reduzir um array
 
-let numeros = [5, 2, 4];
+let numeros = [5, 3, 2, 5];
 
 let total = numeros.reduce((acumulador, numero, indice, original) => {
-    document.write(`${acumulador}Total até o momento.`)
-    document.write(`${numero}Total até o momento. - valor atual.`)
-    document.write(`${indice} índice atual.`)
-    document.write(`${original} Array original.`)
+    console.log(`${acumulador} - Total até o momento.`)
+    console.log(`${numero} - Total até o momento. - valor atual.`)
+    console.log(`${indice} - índice atual.`)
+    console.log(`${original} - Array original.`)
+    console.log('=======================')
+
+    return acumulador += numero; // pegando o número e somando com o resultado
 })
+
+console.log(`TOTAL DO REDUCE: ${total}`)
