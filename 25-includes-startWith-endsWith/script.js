@@ -8,3 +8,10 @@ if(names.includes('Pedro')){
 }else{
     console.log('Não está na lista')
 }
+
+// startsWith: verifica se a palavra começa com o parâmetro fornecido
+let name = 'Carlos';
+console.log(name.startsWith('D'))
+
+// endsWith: verifica se a palavra  TERMINA com o parâmetro fornecido.
+console.log(name.endsWith('n'))
