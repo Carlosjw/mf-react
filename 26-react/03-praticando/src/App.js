@@ -6,7 +6,7 @@ function App() {
   const [tarefas, setTarefas] = useState([
     // 'Pagar UNIMED Saymon',
     // 'Estudar para concursos',
-    // 'Estudar ReactJS'
+    'Estudar ReactJS'
   ]);
 
   function handleRegister(e) {
@@ -36,8 +36,8 @@ function App() {
       <br /><br />
 
       <ul>
-        {tarefas.map((tarefa, index) => ( // passano o parêntesis direto já estaremos retornando o valores
-          <li key={tarefa}>{`${index + 1}ª ${tarefa}`}</li>
+        {tarefas.map((tarefa, index) => ( // passando os parêntesis direto já estaremos retornando o valores
+          <li key={index}>{`${index + 1}ª Tarefa: ${tarefa}`}</li>
         ))}
       </ul>
     </div>
